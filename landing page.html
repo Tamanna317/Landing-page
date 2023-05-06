@@ -1,0 +1,957 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+ :root
+ {
+     --green: green;
+     --black: #130f40;
+     
+     --light-color:#666;
+     --box-shadow:0.00rem 0.3rem rgba(0,0,0,1);
+     --shadow:0.03rem solid rgba(5,0,0,0);
+     --outline:0.02rem solid rgba(5,0,0,6);
+ }
+ 
+ *
+ {
+     font-family: 'Poppins', sans-serif;
+     margin:0;
+     text-decoration:none;
+     border: none;
+     text-transform:capitalize;
+ }
+ 
+ html
+ {
+      font-size:62.5%;
+      overflow-x:hidden;
+      scroll-behavior:smooth;
+      scroll-padding-top:15rem;
+ }
+ 
+ body
+ { 
+      background:#eee;
+ }
+ 
+ 
+ section
+ {
+     padding:2rem 9%;
+     
+ }
+ 
+ .btn
+ {
+         border:.2rem solid var(--black);
+         margin-top: 1rem;
+         display:inline block;
+         padding: .8rem 3rem;
+         font-size:1.7rem;
+         border-radius: .5rem;
+         color:var(--black);
+         cursor: pointer;
+ }
+ 
+ .btn:hover
+ {
+         background: #ADADC9;
+         color:var(--black);
+         
+ }
+ .heading
+ {
+     text-align:center;
+     padding:2rem 0;
+     padding-bottom:1rem;
+     font-size:3.5rem;
+     color:var(--black);
+     
+ }
+ 
+ .heading span
+ {
+     background: #98AFC7;
+     display:inline-block;
+     padding:.5rem 3rem;
+     clip-path:polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%, 0% 0%);
+ }
+ 
+ 
+ /*header css*/
+ .header
+ {
+     position: fixed;
+     top:0;
+     left:0;
+     right:0;
+     z-index:1000;
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     padding:2rem 9%;
+     background:#D3D3D3;
+     box-shadow:var(--box-shadow);
+ }
+ 
+ .header .logo
+ {
+     font-size:2.5rem;
+     font-weight:bolder;
+ }
+ 
+ .header .logo i
+ {
+      color: var(--red);
+ }
+ 
+ .header .navbar a
+ {
+       font-size:1.9rem;
+       margin:15px;
+       color: var(--black);
+ }
+ 
+ 
+ 
+ .header .icons div
+ {
+      border: 1px solid;
+      height:4.5rem;
+      width:4.5rem;
+      line-height:4.5rem;
+      border-radius:.5rem;
+      background:#eee;
+      color: var(--black);
+      font-size:2rem;
+      text-align : right;
+      text-align: center;
+      cursor:pointer;
+      
+ }
+ 
+ .header .icons div:hover
+ {
+      background:var(--black);
+      color:white;
+ }
+ 
+ #menu-btn
+ {
+      display:none;
+ }
+ 
+ .header .search-form 
+ {
+      position:absolute;
+      top:110%;
+      right:2rem;
+      width:50rem;
+      height:5rem;
+      background:#fff;
+      border-radius:.5rem;
+      
+      display:flex;
+      align-items:center;
+      box-shadow: var(--box-shadow);
+ }
+ 
+ .header .search-form input
+ {
+      height:100%;
+      width:100%;
+      background:none;
+      text-transform:none;
+      font-size:1.6rem;
+      color:var(--black);
+      
+ }
+ 
+ .home
+ {
+         
+         display:flex;
+         justify-content:center;
+         background:url(./image/head.img.jpeg);
+         background-position:right;
+         background-size:cover;
+         padding-top:17rem;
+         padding-bottom:10rem;
+         
+ }
+ 
+ .home .content
+ {
+         
+         text-align:left;
+         width:60rem;
+ }
+ 
+ .home .content 
+ {
+     color:var(--black);
+     font-size:2rem;
+ }
+ 
+ .home .content h3 span
+ {
+     color:var(--green);
+     
+ }
+  
+ .home .content p
+ {
+     color:var(--black);
+     font-size:1.5rem;
+ }
+ /*header css*/
+ 
+ 
+ .Go-Healthy
+ {
+     font-size:2rem;
+ }
+ 
+ 
+ /*review css*/
+ .review
+ {
+      background:#D0D0D0	;
+ }
+ 
+ .footer .box-container
+ {
+      border:0px solid;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));
+      gap:1.2rem;
+ }
+ /*review css*/
+ 
+ 
+ 
+ 
+ 
+ 
+ .features  .content p
+ {
+     color:var(--black);
+     font-size:1.5rem;
+ }
+ .features .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ 
+ .features .box-container  .box
+ {
+     padding: 2rem 3rem;
+     background:#fff;
+     outline:var(--outline);
+     outline-offset:-1rem;
+     text-align:center;
+     
+ }
+ 
+ .features .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .features .box-container  .box img
+ {
+     height:20rem;
+ }
+  
+ .features .box-container  .box h3
+ {
+     font-size:2.0rem;
+     color:var(--black);
+     
+ }
+ /*feature css*/
+ 
+ 
+ 
+ /*Categories css*/
+ .categories .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .categories .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .categories .box-container  .box:hover
+ {
+             box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .categories .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .categories .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ 
+ 
+ /*veg-products css*/
+ .veg-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .veg-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .veg-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .veg-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .veg-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*veg-products css*/
+ 
+ /*fru-products css*/
+ .fru-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .fru-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .fru-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .fru-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .fru-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*fru-products css*/
+ 
+ /*dry-products css*/
+ .dry-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .dry-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .dry-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .dry-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .dry-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*dry-products css*/
+ 
+ /*jui-products css*/
+ .jui-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .jui-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .jui-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .jui-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .jui-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*jui-products css*/
+ 
+ 
+ /*milk-products css*/
+ .milk-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .milk-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .milk-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .milk-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .milk-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*milk-products css*/
+ 
+ 
+ /*meat-products css*/
+ .meat-products .box-container 
+ {
+     border:0px solid;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+     gap:1.5rem;
+ }
+ 
+ .meat-products .box-container  .box
+ {
+     padding: 3rem 0;
+     background:#fff;
+     border-radius: .5rem;
+     box-shadow:var(--light-color);
+     outline-offset:-1rem;
+     outline:var(--outline);
+     text-align:center;
+     cursor:pointer;
+     
+ }
+ 
+ .meat-products .box-container  .box:hover
+ {
+         box-shadow:1px 1px 10px 4px var(--black);
+ }
+ 
+ .meat-products .box-container  .box img
+ {
+     margin:1rem 0;
+     height:20rem;
+ }
+ 
+ .meat-products .box-container  .box h3
+ {
+         font-size:2rem;
+         color:var(--black);
+ }
+ /*meat-products css*/
+ 
+ /*Categories css*/
+ 
+ 
+ 
+ 
+ /*Product css*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*Product css*/
+ 
+ 
+ 
+ 
+ 
+ /*footer css*/
+ .footer
+ {
+      background:#F8F8F8;
+ }
+ 
+ .footer .box-container
+ {
+      border:0px solid;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(26rem,1fr));
+      gap:1.2rem;
+ }
+ 
+ .footer .box-container .box h3
+ {
+       font-size:2.5rem;
+       color:var(--black);
+       padding:1rem 0;
+ }
+ 
+ .footer .box-container .box h3 i
+ {
+       color: green;
+ }
+ 
+ .footer .box-container .box links
+ {
+       display:block;
+       font-size:1.5rem;
+       color:var(--black);
+       padding:1rem 0;
+ }
+ 
+ .footer .box-container .box links i
+ {
+     color:green;
+     padding-right:5rem;
+ }
+ 
+ .footer .box-container .box links:hover i
+ {
+       padding-right:2rem;
+ }
+ .footer .box-container i:hover
+ {
+         color:var(--green);
+ }
+ 
+ .footer .box-container .box p
+ {
+       line-height: 1.8;
+       font-size:1.5rem;
+       color: var(--light color);
+       padding:1 rem 0;
+ }
+ 
+ .footer .box-container .box .share a
+ { 
+      height:4rem;
+      width:4rem;
+      line-height:4rem;
+      border-radius:5rem;
+      font-size:2rem;
+      color:var(--black);
+      margin-left:2rem;
+      background:#eee;
+      text-align:center;
+ }
+ 
+ .footer .credit
+ {
+     text-align:center;
+     margin-top:2rem;
+     padding:1rem;
+     padding-top:2.5rem;
+     font-size:2rem;
+     color:var(--black);
+     border-top:black;
+ }
+ 
+ .footer .credit span
+ {
+         color:var(--green);
+ }
+ 
+ /*footer css*/
+ 
+ </style>
+</head>
+<body>
+     <!--header section-->
+ <header class="header">
+    <a href="#" class="logo"><i class="fa fa-shopping-cart">BeLeaf Organic</i></a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#Go Healthy">Go Healthy</a>
+        <a href="#Features">Features</a>
+        <a href="#categories">Product categories</a>
+        <a href="#review">review</a>
+        <a href="#Contact">Contact</a>
+        
+    </nav>
+    
+    <div class="icons">
+         <div class="fa fa-bars" id="menu-btn"></div>
+         <div class="fa fa-heart" id="cart-btn"></div>
+         <div class="fa fa-user" id="login-btn"></div>
+         <div class="fa fa-share-alt" id="login-btn"></div>
+    </div>
+    </header>
+    <!--header section-->
+    
+    
+    
+    <!--banner section-->
+    <section div class="Home" id="home">
+       <div class="content">
+       <h3>....Fresh And <span>Organic</span> Products For You....</h3>
+       <p> <strong>High Quality Best Products</strong></p><br>
+       <p><align="jusify">Food Does Not Simply Recharge a Persons Batteries It Shapes Their Life.If you Love Someone ,Give Them Food That Nourishes Their Body And Soul,Food That is Grown Responsibly,And Food That Benefits The World</p>
+       </div>
+   </div>
+   </section>	
+    <!--banner section-->
+    
+    
+    
+    <!--Go green section-->
+    <section  class="Go Healthy" id="Go Healthy">
+    <h1 class="heading">  <span>Go Healthy</span></h1>
+    <img src="Image\go-healthy.img.jpeg" height="150" width="150" align="left"/>
+       <p style="margin-left:175px;font-size:12px">Know how Organic Agriculture is the Healthier choice for us and our planet. Organic farmers rely on natural process ,biodiversity and cycles adapted to local condition rather than the use of synthetic inputs like fertilizer, pesticides and GMO's....Thereby helping regenerate the health of soils ,ecosystem and people......Go Healthy Improves Our Community Life
+   by creating healthy, innovative, functional products and offer education to support total well-being. We are committed to enhance the overall health and wellbeing of our customers. That’s why we recommend healthy foods.</p><br>
+       <a href="GO_green.html" class="btn" style="margin-left:350px">Read more</a><br><br>
+   <!--Go green section-->
+    
+    
+    <!--feature section-->
+     <section class="Features" id="Features">
+     <h1 class="heading"><span>Our Features</span></h1>
+     
+   <div class="box-container">
+   <div class="box">
+   <img src="Image\Fe-fresh.img.jpeg" height="200" width="240">
+   <h3>Fresh And Organic</h3>
+   <p>Organic foods include fresh , meats, and dairy products,crackers, drinks, and frozen meals.
+   </p><br>
+   <a href="Feat_vege.html" class="btn">Read more</a>
+   <p>                                    </p>
+   </div>
+   
+   
+   <div class="box">
+   <img src="Image\Fe-delievery.img.jpeg" height="200" width="240">
+   <h3>Free Home Delievery</h3>
+   <p> 
+   We make it easier By delieveing the product at your place in free of cost...
+   </p><br>
+   <a href="Feat_del.html" class="btn">Read more</a>
+   </div>
+   
+   <div class="box">
+   <img src="Image\Fe-payment.img.jpeg" height="200" width="240">
+   <h3>Easy Payment</h3>
+   <p>We make it more easier payment mode with google pay , phone pay,netbanking, cash on delievery & many more</p>
+   <hr>
+   </p><br>
+   <a href="Feat_pay.html" class="btn">Read more</a>
+   </div>
+   </div>
+   </section>
+    <!--feature section-->
+    
+    
+    
+   <!--Categories section-->
+   <section class="categories" id="categories">
+     <h1 class="heading">  <span>Product categories</span></h1>
+    <div class="box-container">
+    <!--vegetable-->
+     <div class="box">
+     <img src="Image/pr-1.img.jpeg" height="200" width="240">
+     <h3>Fresh Vegetables</h3>
+     <p>Upto 40% off</p><br>
+     <a href="Vegetable.html" class="btn">Check now</a>
+     </div>
+     
+     
+     <!--fruits-->
+      <div class="box">
+     <img src="Image/pr-2.img.jpeg" height="200" width="240">
+     <h3>Fresh Fruits</h3>
+     <p>Upto 30% off</p><br>
+     <a href="Fruits.html" class="btn">Check now</a>
+     </div>
+    
+    <!--dry fruits-->
+     <div class="box">
+     <img src="Image/pr-3.img.jpeg" height="200" width="240">
+     <h3>Dry Fruits</h3>
+     <p>Upto 30% off</p><br>
+     <a href="Dry fruits.html" class="btn">Check now</a>
+     </div>
+    
+    
+    <!--Juices-->
+     <div class="box">
+     <img src="Image/pr-4.img.jpeg" height="200" width="240">
+     <h3>Fresh Juices</h3>
+     <p>Upto 30% off</p><br>
+     <a href="Juices.html" class="btn">Check now</a>
+     </div>
+    
+    <!--Milk product-->
+     <div class="box">
+     <img src="Image/pr-5.img.jpeg" height="200" width="240">
+     <h3>Milk products</h3>
+     <p>Upto 40% off</p><br>
+     <a href="Milk products.html" class="btn">Check now</a>
+     </div>
+     
+    
+    <!--meat-->
+     <div class="box">
+     <img src="Image/pr-6.img.jpeg" height="200" width="240">
+     <h3>Fresh Non-Veg</h3>
+     <p>Upto 30% off</p><br>
+     <a href="Meat product.html" class="btn">Check now</a>
+     </div>
+    </div>
+    </section>
+    <!--Categories section-->
+   
+   
+   
+   <!--review section-->
+    <section class="review" id="review">
+      <h1 class="heading">  <span> Customer's Review</span></h1>
+    <div class="box-container">
+    <div class="box">
+    <h3>Agaz</h3>
+       <img src="Image/R1.img.jpeg" alt="" height="150" width="150">
+    <div class="stars">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       </div>
+       <p>It's really affordable also best quality wise, I have used a lot of brands but compared to those it's really good quality and affordable,
+       helped really in dieting...... Rather than taking fake ones take this one.... It's 100% natural and organic with no preservatives also really
+       beneficial for health helps to prevent anaemia, now diabetics can also say hi to sweetness in taste with Kothari crystal Palm sugar.... ❤️ </p>
+       <div class="user">
+       <div class="User Info">
+       <span> Happy Customer</span>
+       </div>
+       </div>
+       <span.class="fa fa-quote-right"></span><br><br
+       
+       
+       <div class="box">
+       <h3>Sarthak</h3>
+       <img src="Image/R3.img.jpeg" alt="" height="150" width="150">
+    <div class="stars">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+       <i class="fa fa-star-o"></i>
+       </div>
+       <p>The app is user-friendly, and the delivery process is streamlined, making it easy for customers to track their orders and receive their food hot and fresh. Additionally, Swiggy offers a number of promotions and discounts, which helps customers save money and get even more value from the service.
+   Review collected by and hosted on G2.com.The app is user-friendly, and the delivery process is streamlined, making it easy for customers to track their orders and receive their food hot and fresh. Additionally, Swiggy offers a number of promotions and discounts, which helps customers save money and get even more value from the service.
+   Review collected by and hosted on G2.com.</p>
+       <div class="user">
+       <div class="User Info">
+       <span> Satisfied Customer</span>
+       </div>
+       </div>
+       <span.class="fa fa-quote-right"></span><br><br>
+       
+       
+       <div class="box">
+       <h3>Sneha</h3>
+       <img src="Image/R2.img.jpeg" alt="" height="150" width="150">
+    <div class="stars">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+       </div>
+       <p>makes it easier for people to access a wide variety of food options. With the app, customers can easily browse menus from a large number of restaurants and place orders for delivery or pickup. This saves time and effort compared to physically visiting each restaurant to place an order.
+   Review collected by and hosted on G2.com.makes it easier for people to access a wide variety of food options. With the app, customers can easily browse menus from a large number of restaurants and place orders for delivery or pickup. This saves time and effort compared to physically visiting each restaurant to place an order.
+   Review collected by and hosted on G2.com.</p>
+       <div class="user">
+       <div class="User Info">
+       <span> Happy Customer</span>
+       </div>
+       </div>
+       <span.class="fa fa-quote-right"></span><br><br>
+   
+   
+   <div class="box">
+   <h3>Snehal</h3>
+   <img src="Image/R4.img.jpeg" alt="" height="150" width="150">
+    <div class="stars">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+       <i class="fa fa-star-o"></i>
+       <i class="fa fa-star-o"></i>
+       </div>
+       <p>There have also been instances of delays in delivery, which can be frustrating for customers who are expecting
+       their food to arrive in a timely manner. Some customers have also reported that the customer service provided by Swiggy 
+       can be lacking, with it being difficult to get in touch with support and resolve issues. These are common concerns that
+       customers may have about food delivery services in general, and it's important for companies like Swiggy to address them in
+       order to maintain customer satisfaction and loyalty</p>
+       <hr>
+       <div class="user">
+       <div class="User Info">
+       <strong>Satisfied Customer</strong>
+       </div>
+       </div>
+       <span.class="fa fa-quote-right"></span><br>
+   
+   </div>
+    <!--review section-->
+    
+    
+    <!--footer section-->
+    <footer>
+    <section class="footer" id="Contact">
+    <div class="box-container">
+    <div class="box">
+        <h3>BeLeaf Organic <i class="fa fa-shopping-cart"></i></h3>
+        <p> Free to follow us on our social media</p>
+        <div class="share">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+   </div>
+        
+    <div class="box">
+   <h3>Contact us</h3>
+   <a href="#" class="links"><i class="fa fa-phone"></i>+91 9087654113</a><br>
+   <a href="#" class="links"><i class="fa fa-phone"></i>+91 912345673</a><br>
+   <a href="#" class="links"><i class="fa fa-envelope"></i>organic@gmail.com</a><br>
+   <a href="#" class="links"><i class="fa fa-map"></i>Chembur Mumbai -74 (INDIA)</a><br>
+   </div>
+   
+   <div class="box">
+   <h3>Newsletter</h3>
+   <p>Subscribe for latest update</p>
+   <form action="feedback.html">
+   <input type="email" placeholder="Enter your email....." class="email">
+   <input type="submit" value="Move to Feedback" class="btn">
+   </form>
+   </div>
+   </div>
+   
+   <Div class="credit">Created By  <span>BeLeaf Organic</span> | All Rights Reserved</div>
+   <!--footer section-->
+   
+   
+</body>
+</html>
